@@ -1,0 +1,14 @@
+RewriteEngine on
+
+RewriteRule ^effective-selling-techniques masterclass.php [NC,L]
+
+RewriteRule ^trainings trainings.php [NC,L]
+
+RewriteRule ^registration registration.php [NC,L]
+
+RewriteRule ^coaches coaches.php [NC,L]
+
+
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{HTTP_HOST} ^(www\.)?konganacademy\.com
+RewriteRule ^(.*)$ https://www.konganacademy.com/$1 [R,L]
